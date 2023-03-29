@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Finish Lab 4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <View
+        android:id="@+id/divider13"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="80dp"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Button" />
+
+    <View
+        android:id="@+id/divider14"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="106dp"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider" />
+
+    <View
+        android:id="@+id/divider15"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="139dp"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider" />
+
+    <View
+        android:id="@+id/divider16"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="168dp"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/textView17"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Cook dinner"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="108dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Brush teeth"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="145dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Do laundry"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Finish Lab 4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <View
+        android:id="@+id/divider9"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="80dp"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider" />
+
+    <View
+        android:id="@+id/divider10"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="106dp"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider" />
+
+    <View
+        android:id="@+id/divider11"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="139dp"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider" />
+
+    <View
+        android:id="@+id/divider12"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="168dp"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/textView10"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Cook dinner"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="108dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Brush teeth"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="145dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Do laundry"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Finish Lab 4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <View
+        android:id="@+id/divider5"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="80dp"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider" />
+
+    <View
+        android:id="@+id/divider6"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="106dp"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider" />
+
+    <View
+        android:id="@+id/divider7"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="139dp"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider" />
+
+    <View
+        android:id="@+id/divider8"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="168dp"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/textView6"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Cook dinner"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="108dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Brush teeth"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="145dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Do laundry"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+</LinearLayout>
