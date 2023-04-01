@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 items.remove(i);
                 itemsAdapter.notifyDataSetChanged();
                 return true;
+
                 AlertDialog.Builder builder1 = new AlertDialog.Builder(getContext());
                 AlertDialog.Builder builder;
                 builder.setTitle("Do you want to delete this?");
