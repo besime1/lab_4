@@ -1,146 +1,92 @@
 package com.example.mainactivity;
+import static java.security.AccessController.getContext;
+
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Switch;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
-import java.util.List;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.helper.widget.Carousel;
-
-import android.os.Bundle;
-import android.widget.ListView;
-import java.util.ArrayList;
-import java.util.List;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    private ArrayList<String> items;
+     private ArrayAdapter<String> itemsAdapter;
+    private ListView listView;
+    private Button button;
 
+    @SuppressLint("MissingInflatedId")
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected  void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        listView= findViewById(R.id.listView);
+        button=findViewById(R.id.button);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addItem(view);
+            }
+        });
+
+        items= new ArrayList<>();
+        itemsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
+        listView.setAdapter(itemsAdapter);
+        setUpListVievListener();
+
+
+
     }
 
-
-    public class TodoItem {
-        private String text;
-        private boolean isUrgent;
-
-        public TodoItem(String text, boolean isUrgent) {
-            this.text = text;
-            this.isUrgent = isUrgent;
-        }
-
-        public String getText() {
-            return text;
-        }
-
-        public void setText(String text) {
-            this.text = text;
-        }
-
-        public boolean isUrgent() {
-            return isUrgent;
-        }
-
-        public void setUrgent(boolean urgent) {
-            isUrgent = urgent;
-        }
-
-        public class mainActivity extends AppCompatActivity {
-
-            private List<TodoItem> todoItemList;
-            private ArrayAdapter<TodoItem> adapter;
-
+    private void setUpListVievListener() {
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            protected void onCreate(Bundle savedInstanceState) {
-                super.onCreate(savedInstanceState);
-                setContentView(R.layout.activity_main);
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Context context =getApplicationContext();
+                Toast.makeText(context, "Item Removed", Toast.LENGTH_SHORT).show();
+                items.remove(i);
+                itemsAdapter.notifyDataSetChanged();
+                return true;
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(getContext());
+                AlertDialog.Builder builder;
+                builder.setTitle("Do you want to delete this?");
+                String position;
+                builder.setMessage("The selected row is: " + position);
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // delete the selected row
+                    }
+                });
 
-                // Initialize todoItemList
-                todoItemList = new ArrayList<>();
-
-                // Initialize adapter
-                adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, todoItemList);
-
-                // Set adapter to ListView
-                ListView listView = findViewById(R.id.listView);
-                listView.setAdapter(Carousel.adapter);
+                builder.setNegativeButton("No", null);
 
             }
-        }
-
+        });
     }
-    Button addButton = findViewById(R.id.addButton);
-addButton.setOnClickListener(new View.OnClickListener()
 
-    {
-        @Override
-        public void onClick (View view){
-        EditText editText = findViewById(R.id.editText);
-        Switch switchUrgent = findViewById(R.id.switchUrgent);
+    private void addItem(View view) {
+        EditText input = findViewById(R.id.editText2);
+        String item = input.getText().toString();
 
-        String text = editText.getText().toString();
-        boolean isUrgent = switchUrgent.isChecked();
-
-        TodoItem todoItem = new TodoItem(text, isUrgent);
-        todoItemList.add(todoItem);
-
-        editText.setText("");
-        adapter.notifyDataSetChanged();
-    }
-        private class TodoItemAdapter extends BaseAdapter {
-
-            @Override
-            public int getCount() {
-                return todoItemList.size();
-            }
-
-            @Override
-            public TodoItem getItem(int position) {
-                return todoItemList.get(position);
-            }
-
-            @Override
-            public long getItemId(int position) {
-                return position;
-            }
-
-            @Override
-            public View getView(int position, View convertView, ViewGroup parent) {
-                View view = convertView;
-
-                if (view == null) {
-                    view = getLayoutInflater().inflate(R.layout.list_item_todo, parent, false);
-                }
-
-                TodoItem todoItem = getItem(position);
-                TextView textView = view.findViewById(R.id.textView);
-                textView.setText(todoItem.getText());
-
-                if (todoItem.isUrgent()) {
-                    view.setBackgroundColor(Color.RED);
-                    textView.setTextColor(Color.WHITE);
-                } else {
-                    view.setBackgroundColor(Color.WHITE);
-                    textView.setTextColor(Color.BLACK);
-                }
-
-                return view;
-            }
+        String itemText = null;
+        if(!(itemText.equals(""))){
+            itemsAdapter.add(itemText);
+            input.setText("");
+        }
+        else{
+            Toast.makeText(getApplicationContext(), "Please enter text..", Toast.LENGTH_LONG).show();
         }
 
     }
