@@ -1,4 +1,4 @@
-package com.example.androidlabs;
+package com.example.mainactivity;
 
 import android.graphics.Color;
 import android.view.LayoutInflater;
@@ -41,7 +41,7 @@ public class TodoListAdapter extends BaseAdapter {
         TextView label;
         if(convertView==null)
         {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_todo_layout,parent,false);
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.todo_list_item,parent,false);
         }
         label = view.findViewById(R.id.textView_todo);
         label.setText(todo.getName());
