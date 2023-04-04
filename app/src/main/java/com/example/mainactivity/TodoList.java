@@ -3,7 +3,7 @@ package com.example.mainactivity;
 public class TodoList {
     int _id;
     String name;
-    Boolean isUrgent;
+    public Boolean isUrgent;
 
     public TodoList(int _id, String name, Boolean isUrgent) {
         this._id = _id;
