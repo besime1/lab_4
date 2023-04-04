@@ -57,5 +57,20 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TodoList todo = new TodoList();
+                String task = todoText.getText().toString();
+                Boolean isUrgent = isUrgentSwitch.isChecked();
+                todo.setName(task);
+                todo.setUrgent(isUrgent);
+                todoAdapter.addToDo(todo);
+                appDatabase.addTodo(todo);
+                todoText.setText(null);
+                isUrgentSwitch.setChecked(false);
+
+            }
+        });
     }
 }
