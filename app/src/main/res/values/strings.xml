@@ -4,6 +4,8 @@
     <string name="dialog_message">The selected row is: %d</string>
     <string name="dialog_positive_button">Delete</string>
     <string name="dialog_negative_button">Cancel</string>
+    <string name="add">add</string>
+    <string name="type_here">type_here</string>
 
 </resources>
 
