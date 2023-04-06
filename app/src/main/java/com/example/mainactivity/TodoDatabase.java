@@ -63,10 +63,7 @@ public class TodoDatabase extends SQLiteOpenHelper {
                 TodoList todo = new TodoList();
                 todo.setId(Integer.parseInt(cursor.getString(0)));
                 todo.setName(cursor.getString(1));
-                boolean isUrgent = false;
-                if (Integer.parseInt(cursor.getString(2)) == 1) {
-                    isUrgent = true;
-                }
+                boolean isUrgent = Integer.parseInt(cursor.getString(2)) == 1;
                 todo.setUrgent(isUrgent);
                 contactList.add(todo);
             } while (cursor.moveToNext());

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="listView" type="id">listview</item>
-    <item name="editText2" type="id" />
-</resources>
