@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidLabs</string>
+    <string name="type_here">Écrivez ici</string>
+    <string name="add">Ajouter</string>
+    <string name="do_you_want_to_delete">Voulez-vous supprimer ce?</string>
+    <string name="selected_row">La ligne sélectionnée est:</string>
+    <string name="no">Non</string>
+    <string name="yes">Oui</string>
+</resources>
